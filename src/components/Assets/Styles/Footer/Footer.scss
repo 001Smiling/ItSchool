@@ -1,0 +1,97 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 63px 0 0 0;
+    background-color: rgb(249, 248, 253);
+    color: rgba(142, 142, 142, 1);
+}
+
+.footer__datablok{
+    flex-direction: column;
+}
+.footer__data{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0;
+    height: 228px;
+    border-bottom: 1px solid rgba(216, 216, 216, 1);
+}
+.footer-firstpart{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-firstpart__nameblok{
+    height: 32px;
+    display: flex;
+}
+
+.footer-firstpart__logo{
+    width: 87px;
+}
+
+.footer-firstpart__name{
+    width: 151px;
+    padding: 0px 0px 0px 19px;
+}
+
+.footer-firstpart__network{
+    display: flex;
+    margin: 40px 0px 0px 0px;
+}
+
+.footer-firstpart__network-icon{
+    margin: 0px 16px 0px 0px;
+    &:last-child{
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+.footer-seconpart{
+    width: 447px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.footer-seconpart__contactandie{
+    width: 160px;
+    height: 181px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+.footer-seconpart__menu{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgba(34, 37, 59, 1);
+}
+
+.footer-seconpart__contact{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: rgba(34, 37, 59, 1);
+}
+
+.footer-seconpart__contact-point{
+    color: rgba(56, 191, 242, 1);
+    padding: 0px 0px 5px 0px;
+}
+
+.footer-seconpart__ie{
+    line-height: 176%;
+}
+
+.footer__law,
+.footer__privacy {
+    height: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__privacy{
+    width: 538px;
+}

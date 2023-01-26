@@ -1,0 +1,129 @@
+.main-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-price__title{
+    font-weight: 600;
+    font-size: 46px;    
+    padding: 90px 0px 0px 0px;
+}
+.main-price__container{
+    flex-direction: column;
+}
+.main-price__points{
+    width: 100%;
+    height: 139px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-price__point1,
+.main-price__point2,
+.main-price__point3{
+display: flex;
+justify-content: space-between;
+}
+
+.main-price__point1{
+    width: 34%;
+}
+
+.main-price__point2{
+    width: 22%;
+}
+
+.main-price__point3{
+    width: 35%;
+}
+
+.main-price__text{
+    width: 75%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 131%;
+}
+
+.mainprice-table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    padding: 21px 40px 17px 39px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    // font-family: $fontFamily;
+    // letter-spacing: $letterSpace;
+}
+.mainprice-table__header-footer,
+.mainprice-table__row {
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.mainprice-table__row {
+    font-size: 20px;
+    font-weight: 400;
+    &:nth-child(odd){
+        background: #F3F3F3;
+    }
+    // font-family: $fontFamily;
+}
+
+.mainprice-table__header-footer{
+    font-weight: 700
+}
+.mainprice-table__header{
+    font-size: 16px;
+    color: rgba(56, 191, 242, 1);
+}
+.mainprice-table__header-footer{
+    font-size: 24px;
+}
+.mainprice-table__data,
+.mainprice-table__rowblok {
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+    width: 33%;
+}
+
+.mainprice-table__iftime{
+    font-size: 16px;
+    color: rgba(142, 142, 142, 1);
+    margin: 25px 0px 33px 58px;
+}
+
+.mainprice-rules{
+    height: 218px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #EAF2F5;
+    border-radius: 30px;
+}
+
+.mainprice-rules__icon{
+    margin: 0px 0px 0px 54px;
+}
+
+.mainprice-rules__text{
+    width: 51%;
+    font-size: 17px;
+    line-height: 129%;
+}
+
+.mainprice-rules__btn{
+    font-size: 20px;
+    width: 26%;
+    margin: 0px 51px 0px 0px;
+}
+
+
+
+

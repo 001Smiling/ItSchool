@@ -1,0 +1,58 @@
+$maxWidth: 1400;
+@mixin adaptiv-font($pcSize, $mobSize){
+    $addSize: $pcSize - $mobSize;
+    $maxWidth:$maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+.header-about {
+    display: flex;
+    align-items: flex-end;
+    width: 83%;
+    height: 535px;
+}
+.header-about__text{
+    width: 50%;
+    height: 420px;
+}
+.header-about__text-slogan{
+    height: 44%;
+    font-weight: 500;
+    line-height: 100%;
+    @include adaptiv-font(46,24);
+    .header-about__text-y{
+        color: #38BFF2;
+    }
+    .header-about__text-y2{
+        color: #F15525;
+    }
+}
+.header-about__text-test{
+    display: flex;
+    align-items: center;
+    width: 56%;
+    height: 74px;
+    font-weight: 400;
+    line-height: 143%;
+    @include adaptiv-font(16,12);
+    border-top: 1px solid rgba(222, 222, 222, 1);
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: #F15525;
+    color: rgb(255, 255, 255);
+    border-radius: 82px;
+}
+.header-about__text-button {
+    width: 46%;
+    @include adaptiv-font(20,18);
+    font-weight: 400;
+}
+
+.arrow {
+    margin: 0 0 0 2%;
+    transform: rotate(-45deg);
+}
