@@ -47,7 +47,7 @@ $maxWidth: 1400;
     border-radius: 82px;
 }
 .header-about__text-button {
-    width: 46%;
+    width: 321px;
     @include adaptiv-font(20,18);
     font-weight: 400;
 }
@@ -55,4 +55,11 @@ $maxWidth: 1400;
 .arrow {
     margin: 0 0 0 2%;
     transform: rotate(-45deg);
+}
+
+@media (min-width: 960px) and (max-width: 1200px){
+    .header-about__text{
+        width: 500px;
+        height: 320px;
+    }
 }

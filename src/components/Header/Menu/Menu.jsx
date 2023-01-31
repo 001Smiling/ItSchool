@@ -21,8 +21,8 @@ const Menu = () => {
                 </nav>
                 <div className="header-menu__group-button">
                     <div className="header-menu__regist">Регистрация</div>
-                    <div className="header-menu__login">
-                        <span className="header-menu__login-arrow"><ArrowRightOutlined /></span>
+                    <div className="header-menu__login login-button">
+                        <span className="header-menu__login-arrow login-arrow"><ArrowRightOutlined /></span>
                         Войти
                     </div>
                 </div>
