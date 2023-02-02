@@ -9,7 +9,7 @@ export default function blockAdvantages() {
     return (
         <section className="main-advantages">
             <div className="main-advantages__title">Обучение в YtYt – это удобно и результативно</div>
-            <div className="main-advantages__points">
+            <div className="main-advantages__points sizeblock">
                 {cardcontext}
             </div>
         </section>

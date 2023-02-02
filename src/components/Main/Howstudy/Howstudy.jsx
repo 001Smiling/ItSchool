@@ -20,14 +20,16 @@ function Howstudy() {
             </div>
             <div className="main-howstudy__media">
                 {Withoutvideo === false
-                    ? <div className="howstudy-mediastyle">
+                    ?
+                    <div className="howstudy-mediastyle">
                         <PlayCircleFilled className="howstudy-mediastyle__play" onClick={openvideo} />
                         <div className="howstudy-mediastyle__containerimg">
                             <img className="howstudy-mediastyle__img" src={videoimg} alt="videoimg" />
                             <span className="howstudy-mediastyle__offvideo"></span>
                         </div>
                     </div>
-                    : <div className="howstudy-mediastyle">
+                    :
+                    <div className="howstudy-mediastyle">
                         <CloseCircleFilled className="howstudy-mediastyle__close" onClick={closevideo} />
                         <video className="howstudy-mediastyle__video" src={process} controls autoPlay loop playsInline muted></video>
                     </div>}

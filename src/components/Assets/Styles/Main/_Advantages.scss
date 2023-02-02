@@ -14,11 +14,8 @@ $maxWidth: 1400;
     margin: 0px 0px 7px 0px;
 }
 .main-advantages__points{
-    width: 83%;
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 .main-advantages__point {
     display: flex;
@@ -80,9 +77,6 @@ $maxWidth: 1400;
 }
 
 @media (min-width: 640px) and (max-width: 960px){
-    .main-advantages__points{
-        width: 87%;
-    }
     .main-advantages__point {
         width: 26vw;
         height: 22vh;
