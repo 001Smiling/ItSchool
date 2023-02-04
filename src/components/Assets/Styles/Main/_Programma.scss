@@ -38,7 +38,7 @@ $maxWidth: 1400;
     @include adaptiv-font(17,14);
     font-weight: 400;
     color: rgb(255, 255, 255);
-    padding: 12px 16px 11px 16px;
+    padding: 14.2px 16px 13.3px 16px;
 }
 .main-programma__options-type1 {
     background: #5096FF;
@@ -141,8 +141,60 @@ $maxWidth: 1400;
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 640px){
+    .type{
+        text-align: center;
+        padding: 14.2px 0px 13.3px 0px;
+    }
+    .main-programma__options{
+        align-items: flex-start;
+        padding: 17px 0px 0px 0px;
+        height: 301px;
+    }
+    .main-programma__options-point-types{
+        height: 266px;
+    }
+    .main-programma__options-program,
+    .main-programma__options-type1,
+    .main-programma__options-type4{
+        width: 385px;
+        text-align: center;
+        margin: 0px 0px 9px 0px;
+    }
+    .main-programma__options-type2{
+        width: 119px;
+        margin: 0px 9px 9px 0px;
+    }
+    .main-programma__options-type3{
+        width: 257px;
+    }
+    .main-programma__options-type6,
+    .main-programma__options-type7{
+        width: 188px;
+        margin: 0;
+    }
+    .main-programma__options-type6{
+        margin: 0px 9px 0px 0px;
+    }
     .main-programma__options-point-end{
         display: none;
+    }
+}
+
+@media (max-width: 480px){
+    .main-programma__options-program,
+    .main-programma__options-type1,
+    .main-programma__options-type4{
+        width: 267px;
+    }
+    .main-programma__options-type2{
+        width: 99px;
+    }
+    .main-programma__options-type3{
+        width: 159px;
+    }
+    .main-programma__options-type6,
+    .main-programma__options-type7{
+        width: 129px;
     }
 }

@@ -37,6 +37,11 @@ $maxWidth: 1400;
 .advpoints{
     margin: 27px 27px 0px 0px;
 }
+.main-advantages__blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .main-advantages__subtitle{
     margin: 18px 0px 10px 0px;
     width: 80%;
@@ -88,6 +93,64 @@ $maxWidth: 1400;
         }
     }
 }
+@media (max-width: 640px) {
+    .main-advantages__point {
+        width: 43vw;
+        height: 175px;
+        &:nth-child(odd){
+            margin: 10px 10px 0 0;
+        }
+        &:nth-child(even){
+            margin: 10px 0 0 0;
+        }
+        &:last-child{
+            flex-direction: row;
+            width: 93.75%;
+            height: 116px;
+            margin: 10px 0 0 0;
+            .main-advantages__img{
+                width: 9.8vw;
+            }
+            .main-advantages__subtitle,
+            .main-advantages__text{
+                text-align: start;
+            }
+            .main-advantages__blocktext{
+                align-items: flex-start;
+                width: 52%;
+                margin: 0 0 0 19.8px;
+            }
+            .main-advantages__subtitle{
+                margin: 0px 0px 3px 0px;
+            }
+        }
+    }
+    .main-advantages__img{
+        width: 8.3vw;
+    }
+}
+
+@media (max-width: 480px){
+    .main-advantages__point {
+        width: 45vw;
+        &:last-child{
+            height: 86px;
+        }
+        &:nth-child(-n+4){
+            &:nth-child(n+3){
+                height: 155px;
+            }
+        }
+    }
+    .main-advantages__subtitle{
+        width: 72%;
+        margin: 9px 0px 4px 0px;
+    }
+    .main-advantages__img{
+        width: 12.3vw;
+    }
+}
+
 
 @media (max-width: 320px){
     .main-advantages__points{

@@ -23,7 +23,7 @@ $maxWidth: 1400;
     padding: 55px 0px 26px 0px;
 }
 .main-howstudy__subtitle{
-    width: 35%;
+    width: 642px;
     text-align: center;
     @include adaptiv-font(16,12);
     font-weight: 400;
@@ -42,7 +42,6 @@ $maxWidth: 1400;
 .howstudy-mediastyle {
     width: 584px;
     position: relative;
-    padding: 25px 20px 45px 19px;
     background-color: rgb(255, 255, 255);
     border-radius: 17px;
     z-index: 2;
@@ -67,7 +66,7 @@ $maxWidth: 1400;
 
 .howstudy-mediastyle__containerimg{
     border-radius: 17px;
-    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.821);
+    border: 2px solid #F3F3F3;
 }
 .howstudy-mediastyle__offvideo {
     content:"";
@@ -88,7 +87,7 @@ $maxWidth: 1400;
     z-index: 4;
 }
 .howstudy-mediastyle__video{
-    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.821);
+    border: 2px solid #F3F3F3;
 }
 
 .howstudy-mediastyle__img{
@@ -169,6 +168,9 @@ $maxWidth: 1400;
 .howstudy-description__point{
     width: 18.91vw;
     border-right: 1px solid rgba(234, 242, 245, 1);
+    .mob-pointtext{
+        display: none;
+    }
     &:first-child{
         padding: 0px 66px 0px 0px;
     }
@@ -193,7 +195,7 @@ $maxWidth: 1400;
 
 .howstudy-description__pointtitle{
     font-weight: 600;
-    @include adaptiv-font(24,20);
+    @include adaptiv-font(24,17);
     line-height: 125%;
     width: 90%;
     margin: 20px 0px 19px 0px;
@@ -233,6 +235,9 @@ $maxWidth: 1400;
 }
 
 @media (min-width: 1200px) and (max-width: 1400px){
+    .main-howstudy{
+        height: 1200px;
+    }
     .howstudy-description__point{
         width: 21.14vw;
         &:first-child{
@@ -260,7 +265,10 @@ $maxWidth: 1400;
         width: 80%;
     }
 }
-@media  (max-width: 1200px){
+@media (min-width: 640px) and (max-width: 1200px){
+    .main-howstudy__subtitle{
+        width: 492px;
+    }
     .main-howstudy__media{
         width: 571.5px;
     }
@@ -320,7 +328,7 @@ $maxWidth: 1400;
 
 @media (min-width: 960px) and (max-width: 1200px){
     .main-howstudy{
-        height: 1170px;
+        height: 1120px;
     }
     .howstudy-description__point{
         width: 26vw;
@@ -351,9 +359,6 @@ $maxWidth: 1400;
     .howstudy-description{
         width: 87%;
         height: 500px;
-    }
-    .main-howstudy__subtitle{
-        width: 50%;
     }
     .howstudy-description__point{
         width: 34vw;
@@ -390,14 +395,27 @@ $maxWidth: 1400;
 }
 
 @media (max-width: 640px) {
+    .main-howstudy{
+        height: 1371px;
+        margin: 12px 0 0 0;
+    }
+    .main-howstudy__title {
+        width: 66.5%;
+        text-align: center;
+        padding: 0 0 15px 0;
+    }
+    .main-howstudy__subtitle{
+        width: 366px;
+    }
     .main-howstudy__media{
-        width: 571.5px;
+        width: 461.7px;
+        margin: 33.86px 0 22.6px 0;
     }
     .howstudy-mediastyle__play{
-        font-size: 60px;
+        font-size: 38px;
     }
     .howstudy-mediastyle {
-        width: 438px;
+        width: 353.7px;
     }
     .howstudy-mediastyle__img,
     .howstudy-mediastyle__video {
@@ -412,7 +430,7 @@ $maxWidth: 1400;
         top: 6.6%;
     }
     .howstudy-mediastyle__img{
-        height: 275px;
+        height: 222.1px;
     }
     .howstudy-mediastyle__close {
         font-size: 17px;
@@ -420,22 +438,129 @@ $maxWidth: 1400;
         top: 11%;
     }
     .howstudy-mediastyle__back{
-        width:571.5px;
-        height: 156px;
+        width:461.5px;
+        height: 132.6px;
     }
     .howstudy-mediastyle__down{
         &::before{
-            width:571.5px;
+            width:461.5px;
             height:4.5px;
         }
     }
     
     .howstudy-mediastyle__down2{
         content:"";
-        width:571.5px;
+        width:461.5px;
         height:12px;
     }
+    .howstudy-description{
+        height: 689px;
+        flex-direction: column;
+    }
+    .howstudy-description__point{
+        width: 85vw;
+        border-right: none;
+        border-bottom: 1px solid rgb(234, 242, 245);
+        .mob-pointtext{
+            display: block;
+        }
+        .comp-pointtext{
+            display: none;
+        }
+        &:first-child{
+            .howstudy-description__pointtitle{
+                width: 79.75%;
+            }
+            .howstudy-description__pointtext{
+                width: 89.27%;
+            }
+            padding: 0px 0px 25px 0px;
+        }
+        &:nth-last-child(-n+2){
+            .howstudy-description__pointtitle{
+                width: 58.54%;
+            }
+            .howstudy-description__pointtext{
+                width: 78.654%;
+            }
+            padding: 30px 0px 25px 0px;
+            &:last-child{
+                padding: 30px 0px 0px 0px;
+                width: 85vw;
+                border: none;
+                .howstudy-description__pointtext{
+                    width: 81.21%;
+                }
+            }
+        }
+    }
+    .howstudy-description__pointtitle{
+        margin: 7px 0px 14px 0px;
+    }
+    .howstudy-containerbutton{
+        width: 300px;
+        height: 151px;
+        border-radius: 30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .howstudy-buttoncontainer__button{
+        margin: 11px 0px 12px 0px;
+        font-size: 16px;
+    }
+    .howstudy-buttoncontainer__text{
+        width: 249px;
+        text-align: center;
+    }
+}
 
+@media (max-width: 480px) {
+    .main-howstudy__title {
+        width: 66.5%;
+    }
+    .main-howstudy__subtitle{
+        width: 276px;
+    }
+    .main-howstudy__media{
+        width: 291px;
+    }
+    .howstudy-mediastyle {
+        width: 228.98px;
+        height: 144.32px;
+        padding: 10.39px 9.92px 11.4px 7.24px;
+    }
+    .howstudy-mediastyle__img,
+    .howstudy-mediastyle__video {
+        width: 228.98px;
+        height: 144.32px;
+    }
+    .howstudy-mediastyle__offvideo {
+        content:"";
+        width: 228.98px;
+        height: 144.32px;
+        left: 3.7%;
+        top: 6.6%;
+    }
+    .howstudy-mediastyle__close {
+        font-size: 14px;
+        top: 14%;
+    }
+    .howstudy-mediastyle__back{
+        top: 0;
+        width: 291px;
+        height: 64px;
+    }
+    .howstudy-mediastyle__down{
+        &::before{
+            width: 298.72px;
+            height: 1.95px;
+        }
+    }
+    
+    .howstudy-mediastyle__down2{
+        width: 298.72px;
+        height: 6.11px;
+    }
 }
 
 

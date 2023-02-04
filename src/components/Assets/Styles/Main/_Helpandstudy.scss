@@ -1,3 +1,9 @@
+$maxWidth: 1400;
+@mixin adaptiv-font($pcSize, $mobSize){
+    $addSize: $pcSize - $mobSize;
+    $maxWidth:$maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
 .main-helpandstudy{
     display: flex;
     flex-direction: column;
@@ -27,9 +33,6 @@
     &:last-child{
         margin: 0px 0px 0px 30px;
     }
-    &:last-child{
-        margin: 0px 0px 0px 30px;
-    }
 }
 
 .helpandstudy-point__textblok{
@@ -44,12 +47,47 @@
 .helpandstudy-point__title{
     width: 75%;
     font-weight: 600;
-    font-size: 32px;
+    @include adaptiv-font(32,20);
     text-align: start;
 }
 .helpandstudy-point__text{
     width: 75%;
     font-weight: 400;
-    font-size: 16px;
+    @include adaptiv-font(16,12);
     line-height: 156%;
+}
+
+@media (max-width: 640px) {
+    .main-helpandstudy{
+        height: 1017px;
+    }
+    .helpandstudy-point {
+        flex-direction: column;
+        height: 540px;
+        margin: 0px 0px 11px 0px;
+        &:last-child{
+            flex-direction: column-reverse;
+        }
+    }
+    .helpandstudy-point__imgblok{
+        width: 93.75%;
+        height: 243px;
+        border-radius: 30px;
+        margin: 0px 0px 12px 0px;
+        .helpandstudy-point__img{
+            width: 72.89%;
+        }
+        &:last-child{
+            margin: 0px 0px 12px 0px;
+        }
+    }
+    .helpandstudy-point__textblok{
+        width: 93.75%;
+        &:first-child{
+            height: 285px;
+        }
+        &:last-child{
+            height: 232px;
+        }
+    }
 }

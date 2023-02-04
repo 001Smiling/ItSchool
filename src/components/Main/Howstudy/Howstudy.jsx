@@ -47,14 +47,20 @@ function Howstudy() {
                 </div>
                 <div className="howstudy-description__point">
                     <div className="howstudy-description__pointnumber">02</div>
-                    <div className="howstudy-description__pointtitle">Обучение через практику</div>
-                    <div className="howstudy-description__pointtext">Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.</div>
+                    <div className="howstudy-description__pointtitle comp-pointtext">Обучение через практику</div>
+                    <div className="howstudy-description__pointtext comp-pointtext">Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.</div>
+                    <div className="howstudy-description__pointtitle mob-pointtext">500 самых разных программ</div>
+                    <div className="howstudy-description__pointtext mob-pointtext">От простого калькулятора ипотеки до мощного веб-приложения, размещенного на сервере и доступного из любой точки мира</div>
                 </div>
                 <div className="howstudy-description__point">
                     <div className="howstudy-description__pointnumber">03</div>
-                    <div className="howstudy-description__pointtitle">Нет ограничений по времени</div>
-                    <div className="howstudy-description__pointtext">Можно совмещать учёбу с работой
+                    <div className="howstudy-description__pointtitle comp-pointtext">Нет ограничений по времени</div>
+                    <div className="howstudy-description__pointtext comp-pointtext">Можно совмещать учёбу с работой
                         и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.</div>
+                    <div className="howstudy-description__pointtitle mob-pointtext">Учитесь в комфортном темпе</div>
+                    <div className="howstudy-description__pointtext mob-pointtext">От 30 минут до нескольких часов
+                        в день. Изучать теорию можно даже
+                        с мобильного телефона. Например, пока вы едете на работу.</div>
                 </div>
             </div>
             <div className="howstudy-containerbutton">
