@@ -11,19 +11,24 @@ img {
     padding: 0;
 }
 .sizeblock{
-    width: 83%;
+    width: 82.858%;
     display: flex;
     border-radius: 48px;
 }
 
 @media (min-width: 640px) and (max-width: 960px){
     .sizeblock{
-        width: 87%;
-    }
+        width: 87vw;
+      }
 }
 @media (max-width: 640px){
     .sizeblock{
-        width: 93.75%;
-    }
+        width: 93.75vw;
+      }
 }
+@media (max-width: 412px) {
+    .sizeblock{
+      width: 93.75vw;
+    }
+  }
 

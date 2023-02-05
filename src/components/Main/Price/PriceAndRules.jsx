@@ -35,11 +35,13 @@ function Price() {
                 </table>
                 <div className="mainprice-table__iftime">* если занятиям уделяется около 20 часов в неделю</div>
                 <div className="mainprice-rules">
-                    <div className="mainprice-rules__iconblock"><img src={rules} alt="iconrules" className="mainprice-rules__icon" /></div>
-                    <div className="mainprice-rules__text">Все блоки проходятся строго по порядку. Пропустить какой-то блок или начать обучение с середины нельзя, даже если вы считаете, что уже знаете какую-то часть материала. Только так мы можем гарантировать, что вы получите все знания, предусмотренные учебной программой.</div>
-                    <div className="mainprice-rules__btn button">
-                        Начать обучение
-                        <span className="mainprice-rules__btnarrow arrow"><ArrowRightOutlined /></span>
+                    <div className="mainprice-rules__points">
+                        <div className="mainprice-rules__iconblock"><img src={rules} alt="iconrules" className="mainprice-rules__icon" /></div>
+                        <div className="mainprice-rules__text">Все блоки проходятся строго по порядку. Пропустить какой-то блок или начать обучение с середины нельзя, даже если вы считаете, что уже знаете какую-то часть материала. Только так мы можем гарантировать, что вы получите все знания, предусмотренные учебной программой.</div>
+                        <div className="mainprice-rules__btn button">
+                            Начать обучение
+                            <span className="mainprice-rules__btnarrow arrow"><ArrowRightOutlined /></span>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -63,3 +63,17 @@ $maxWidth: 1400;
         height: 320px;
     }
 }
+@media (max-width: 640px) {
+    .header-about__text,
+    .header-about__text-test{
+        width: 100%;
+        text-align: center;
+    }
+    .header-about__text-slogan{
+        height: 90px;
+        margin: 70px 0 0 0;
+    }
+    .header-about__text-button{
+        width: 299px;
+    }
+}

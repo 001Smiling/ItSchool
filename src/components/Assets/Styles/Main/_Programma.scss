@@ -142,6 +142,13 @@ $maxWidth: 1400;
 }
 
 @media (max-width: 640px){
+    .main-programma{
+        height: 433px;
+    }
+    .main-programma__title{
+        text-align: center;
+        margin: 0 0 22px 0;
+    }
     .type{
         text-align: center;
         padding: 14.2px 0px 13.3px 0px;

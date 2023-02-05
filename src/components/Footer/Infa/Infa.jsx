@@ -13,7 +13,7 @@ const Infa = () => {
                 <div className="footer-seconpart__menu-point">Контакты</div>
                 <div className="footer-seconpart__menu-point">Регистрация</div>
             </div>
-            <div className="footer-seconpart__contactandie">
+            <div className="footer-seconpart__contactip">
                 <div className="footer-seconpart__contact">
                     <span className="footer-seconpart__contact-point">+7 (499) 348 93 96</span>
                     info@ytyt.ru

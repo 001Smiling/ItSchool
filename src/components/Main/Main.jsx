@@ -3,7 +3,7 @@ import Programma from "./Programma/Programma";
 import BlockAdvantages from "./Advantages/Blockadvantages";
 import Howstudy from "./Howstudy/Howstudy";
 import Helpandstudy from "./Helpandstudy/Helpandstudy";
-import Price from "./Price/Price";
+import PriceAndRules from "./Price/PriceAndRules";
 
 
 const Main = () => {
@@ -15,7 +15,7 @@ const Main = () => {
             <Howstudy />
             <div className="main-bgcolor">
                 <Helpandstudy />
-                <Price />
+                <PriceAndRules />
             </div>
         </main>
     );
