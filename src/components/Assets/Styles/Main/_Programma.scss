@@ -38,6 +38,7 @@ $maxWidth: 1400;
     @include adaptiv-font(17,14);
     font-weight: 400;
     color: rgb(255, 255, 255);
+    text-align: center;
     padding: 14.2px 16px 13.3px 16px;
 }
 .main-programma__options-type1 {
@@ -59,7 +60,6 @@ $maxWidth: 1400;
 }
 
 .main-programma__options-type5 {
-    padding: 12px 26px 10px 25px;
     background: #50C0FF;
     @extend .main-programma__options-type1;
 }
@@ -100,7 +100,7 @@ $maxWidth: 1400;
         width: 38%;
     }
     .main-programma__options-program {
-        width: 46%;
+        width: 47%;
         margin: 0 0 0 3.2vw;
     }
 
@@ -114,30 +114,18 @@ $maxWidth: 1400;
         display: none;
     }
     .main-programma__options-program {
-        width: 69%;
-        margin: 0;
+        width: 375px;
+        margin: 0 auto;
     }
-    .main-programma__options-point-types {
-        justify-content: center;
+    .main-programma__options-type2{
+        padding: 14.2px 27.2px 13.3px 27.2px;
     }
-    .main-programma__options-type4 {
-        margin: 0px 10px 0px 0px;
+    .main-programma__options-type3{
+        padding: 14.2px 17.1px 13.3px 17.1px;
     }
     .main-programma__options-point-end{
         width: 100%;
         text-align: center;
-    }
-}
-
-@media (max-width: 913px){
-    .main-programma__options-type4 {
-        margin: 0px 10px 0px 0px;
-    }
-    .main-programma__options-type7 {
-        background: #AF93FF;
-    }
-    .main-programma__options-type3 {
-        margin: 0;
     }
 }
 
@@ -150,7 +138,6 @@ $maxWidth: 1400;
         margin: 0 0 22px 0;
     }
     .type{
-        text-align: center;
         padding: 14.2px 0px 13.3px 0px;
     }
     .main-programma__options{

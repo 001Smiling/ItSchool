@@ -115,6 +115,7 @@ justify-content: space-between;
     align-items: center;
     padding-left: 19px;
     width: 33%;
+    text-align: start;
 }
 
 .mainprice-table__iftime{
@@ -245,6 +246,12 @@ justify-content: space-between;
             padding: 8.26px 0 0 0;
         }
     }
+    .mainprice-table{
+        padding: 21px 21px 17px 20px;
+    }
+    .mainprice-table__iftime{
+        margin-left: 23px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -268,6 +275,23 @@ justify-content: space-between;
             width: 48.38px;
             height: 55.74px;
             }
+    }
+    .mainprice-table{
+        width: 103%;
+        padding: 21px 0px 17px 20px;
+        border-radius: 30px 0px 0px 30px;
+    }
+    .mainprice-table__data,
+    .mainprice-table__rowblok{
+        &:first-child{
+            width: 100%;
+        }
+        &:nth-child(n+2){
+            display: none;
+        }
+    }
+    .mainprice-table__row {
+        border-radius: 10px 0px 0px 10px;
     }
     .mainprice-rules{
         height: 415px;

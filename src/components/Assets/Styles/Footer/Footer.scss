@@ -102,6 +102,7 @@ $maxWidth: 1400;
 }
 .footer__privacy{
     width: 538px;
+    cursor: pointer;
 }
 
 @media (max-width: 960px) {
@@ -155,13 +156,11 @@ $maxWidth: 1400;
         margin: 43px 0 0 0;
         text-align: center;
     }
-    // .footer__law{
-
-    // }
     .footer__privacy {
         height: 52px;
         flex-direction: column;
         justify-content: space-around;
         margin: 15px 0 0 0;
+        color: rgba(241, 85, 37, 1);
     }
 }

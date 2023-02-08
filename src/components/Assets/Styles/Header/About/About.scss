@@ -7,7 +7,6 @@ $maxWidth: 1400;
 .header-about {
     display: flex;
     align-items: flex-end;
-    width: 83%;
     height: 535px;
 }
 .header-about__text{
@@ -45,6 +44,7 @@ $maxWidth: 1400;
     background-color: #F15525;
     color: rgb(255, 255, 255);
     border-radius: 82px;
+    cursor: pointer;
 }
 .header-about__text-button {
     width: 321px;
