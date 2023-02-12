@@ -137,20 +137,21 @@ $maxWidth: 1400;
   .header-menu__regist{
     display: none;
   }
-
   .menu{
+    width: 100%;
     position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    transform: translateX(1000%);
+    transform: translateX(-1000%);
     transition: all 0.2s;
     top: 0px;
+    left: 0;
   }
   .menu.active{
-    transform: translateX(80%);
+    display: flex;
+    justify-content: flex-start;
+    transform: translateX(25%);
   }
   .menu-content{
-    width: 300px;
+    width: 65vw;
     height: 576px;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -158,12 +159,11 @@ $maxWidth: 1400;
     align-items: center;
     transition: all 0.4s;
     border-radius: 20px;
-    margin: 14px 10px 0px 0px;
-    margin-right: 10px;
+    margin: 14px 0 0px 0px;
     z-index: 100;
       .menu-content__point{
         color: rgba(34, 37, 59, 1);
-        font-size: 20px;
+        @include adaptiv-font(60,20);
         padding: 11px 0 11px 0;
         &:first-child{
           padding: 0 0 11px 0;
@@ -180,21 +180,24 @@ $maxWidth: 1400;
     padding: 25px 18px 0px 0px;
     color: rgba(188, 188, 188, 1);
       svg{
-        width: 19px;
-        height: 19px;
+          @include adaptiv-font(50,19);
       }
   }
   .blur{
-    width: 200vw;
-    height: 1000vh;
-    background-color: #181818c0;
     position: absolute;
-    z-index: 0;
+    width: 140vw;
+    height: 1000vh;
+    display: flex;
+    justify-content: center;
+    background-color: #181818c0;
+    left: -30%;
+    z-index: 3;
   }
   .menu-content__position{
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
   }
   ul li a{
@@ -210,14 +213,20 @@ $maxWidth: 1400;
     text-align: center;
   }
   .menu-content__burgerlogin{
-    width: 132.86px;
+    width: 41.7vw;
     height: 49px;
     margin: 0 0 34px 0;
-    font-size: 15px;
+    @include adaptiv-font(50,15);
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 480px) {
   .header-menu{
     width: 93.75vw;
+  }
+  .menu.active{
+    transform: translateX(15%);
+  }
+  .menu-content{
+    width: 79.6vw;
   }
 }

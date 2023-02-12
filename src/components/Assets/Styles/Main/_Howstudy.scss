@@ -225,10 +225,16 @@ $maxWidth: 1400;
 }
 
 .howstudy-buttoncontainer__button{
+    position: relative;
     width: 249px;
     margin: 12px 0px 11px 0px;
     font-weight: 400;
     font-size: 16px;
+    transform: translateX(0%);
+    transition: 0.2s;
+    &:active{
+        transform: translate(100%,0);
+    }
 }
 
 
@@ -391,8 +397,9 @@ $maxWidth: 1400;
 
 @media (max-width: 640px) {
     .main-howstudy{
-        height: 1371px;
+        height: 1450px;
         margin: 12px 0 0 0;
+        background-image: url(../../Image/Main/small-fon_how_study.png);
     }
     .main-howstudy__title {
         width: 66.5%;
@@ -491,11 +498,26 @@ $maxWidth: 1400;
     .howstudy-buttoncontainer__button{
         margin: 11px 0px 12px 0px;
         font-size: 16px;
+        &:active{
+            transform: translate(0,100%);
+        }
     }
     .howstudy-buttoncontainer__text{
         width: 249px;
         text-align: center;
     }
+    // .howstudy-buttoncontainer__button{
+    //     position: relative;
+    //     width: 249px;
+    //     margin: 12px 0px 11px 0px;
+    //     font-weight: 400;
+    //     font-size: 16px;
+    //     transform: translateX(0%);
+    //     transition: 0.2s;
+    //     &:active{
+    //         transform: translate(100%,0);
+    //     }
+    // }
 }
 
 @media (max-width: 480px) {

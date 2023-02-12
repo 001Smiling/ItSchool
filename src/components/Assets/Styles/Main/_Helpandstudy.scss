@@ -65,7 +65,8 @@ $maxWidth: 1400;
 
 @media (max-width: 640px) {
     .main-helpandstudy{
-        height: 1017px;
+        height: 1060px;
+        border-radius: 30px;
     }
     .helpandstudy-point {
         flex-direction: column;
@@ -73,11 +74,15 @@ $maxWidth: 1400;
         margin: 0px 0px 11px 0px;
         align-items: center;
         &:last-child{
+            height: 487px;
             flex-direction: column-reverse;
         }
     }
+    .helpandstudy-point__imgblok,
+    .helpandstudy-point__textblok{
+        width: 100%;
+    }
     .helpandstudy-point__imgblok{
-        width: 93.75%;
         height: 243px;
         border-radius: 30px;
         margin: 0px 0px 12px 0px;
@@ -89,12 +94,11 @@ $maxWidth: 1400;
         }
     }
     .helpandstudy-point__textblok{
-        width: 93.75%;
         &:first-child{
-            height: 285px;
+            height: 232px;
         }
         &:last-child{
-            height: 232px;
+            height: 285px;
         }
     }
 }
