@@ -17,30 +17,31 @@ function ResultTest({ results, data }) {
                     setlike(true)
                 }
                 else {
-                    setphrase('Не расстраивайся! Начните обучение прямо сейчас и у вас есть все шансы стать отличным программистом!Доступ ко вводным урокам уже открыт')
+                    setphrase('Не расстраивайся! Начни обучение прямо сейчас и у вас есть все шансы стать отличным программистом!Доступ ко вводным урокам уже открыт')
                     setlike(false)
                 }
             }
+
         });
         setCorrectAnswers(correct);
         // eslint-disable-next-line
     }, []);
     return (
-        <div className="test-block">
-            <div className="test-block__sizeblock">
-                <div className="test-block__content">
-                    <div className="test-block__like">
+        <div className="block-result">
+            <div className="block-result__sizeblock blok__sizeblock">
+                <div className="block-result__content blok__content">
+                    <div className="block-result__like">
                         {like === true
                             ?
                             <img src={Like} alt="like" />
-                            : <img src={smile} alt="smile" className='test-block__smile' />
+                            : <img src={smile} alt="smile" className='block-result__smile' />
                         }
-                        <p>Набрано {correctAnswers}/ {data.length}</p>
+                        <p className="block-result__correct">Набрано {correctAnswers}/ {data.length}</p>
                     </div>
-                    {phrase && <div className="test-block__description">{phrase}</div>}
-                    <div className="test-block__btn-result button">
+                    {phrase && <div className="block-result__description">{phrase}</div>}
+                    <div className="block-result__btn-result button">
                         Начать учиться бесплатно
-                        <span className="test-block__arrow"><ArrowRightOutlined /></span>
+                        <span className="block-result__arrow"><ArrowRightOutlined /></span>
                     </div>
                 </div>
             </div>
