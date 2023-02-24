@@ -35,21 +35,55 @@ $maxWidth: 1400;
     @include adaptiv-font(16,12);
     border-top: 1px solid rgba(222, 222, 222, 1);
 }
-
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    background-color: #F15525;
-    color: rgb(255, 255, 255);
-    border-radius: 82px;
-    cursor: pointer;
-}
 .header-about__text-button {
     width: 321px;
     @include adaptiv-font(20,18);
     font-weight: 400;
+    margin-left: 3px;
+    margin-top: 2px;
+}
+.light__btn{
+    &:hover{
+    width: 326px;
+    height: 75px;
+    position: relative;
+    z-index: 6;
+    overflow: hidden;
+    border-radius: 82px;
+    .header-about__text-button::before{
+        content: '';
+        position: absolute;
+        top: -735%;
+        left: 60%;
+        width: 480px;
+        height: 580px;
+        z-index: -3;
+        background-color: #38BFF2;
+        transform-origin: bottom left;
+        animation: animate 4s linear infinite;
+      }
+    .header-about__text-button::after{
+        content: '';
+        position: absolute;
+        top: -735%;
+        left: 60%;
+        width: 480px;
+        height: 580px;
+        z-index: -3;
+        background-color:#e90a0a;
+        transform-origin: bottom left;
+        animation: animate 4s linear infinite;
+        animation-delay: -10s;
+  }
+}
+@keyframes animate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(-360deg);
+    }
+  }
 }
 
 .arrow {

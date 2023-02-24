@@ -21,6 +21,18 @@ a{
     display: flex;
     border-radius: 48px;
 }
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 321px;
+  background-color: #F15525;
+  color: rgb(255, 255, 255);
+  border-radius: 82px;
+  cursor: pointer;
+  z-index: 9;
+}
 @media (min-width: 640px) and (max-width: 960px){
     .sizeblock{
         width: 87vw;
