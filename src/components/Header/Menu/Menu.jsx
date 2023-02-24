@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import logo from '../../Assets/Image/Header/logo.png'
 import BurgerMenu from "./BurgerMenu";
+import { HashLink } from 'react-router-hash-link';
 
-
-const Menu = () => {
+function Menu() {
     const [menuActive, setmenuActive] = useState(false)
     return (
         <div className="header-menu sizeblock">
@@ -12,10 +12,10 @@ const Menu = () => {
                 <img src={logo} className="header-menu__logo" alt="logo" />
                 <div className=" header-menu__without-burger header-menu__withburger">
                     <nav className="header-menu__option">
-                        <div className="header-menu__variant">Чему вы научитесь</div>
-                        <div className="header-menu__variant">Процесс обучения</div>
-                        <div className="header-menu__variant">Стоимость</div>
-                        <div className="header-menu__variant">Контакты</div>
+                        <HashLink to="../../Main/Programma/Programma#main-programma" className="header-menu__variant">Чему вы научитесь</HashLink>
+                        <HashLink to="/../../Main/Price/PriceAndRules#main-howstudy" className="header-menu__variant">Процесс обучения</HashLink>
+                        <HashLink to="../../Main/Price/PriceAndRules#mainprice-table" className="header-menu__variant">Стоимость</HashLink>
+                        <HashLink to="../../Footer/Footer#footer" className="header-menu__variant">Контакты</HashLink>
                         <div className='header-menu__burget-btn burgermenu-state' onClick={() => setmenuActive(!menuActive)}>
                             <span />
                         </div>

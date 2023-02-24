@@ -4,9 +4,8 @@ import process from "../../Assets/Video/process.mp4";
 import videoimg from "../../Assets/Image/Main/video.PNG"
 
 
-function Howstudy() {
+function Howstudy({ activeTests }) {
     const [Withoutvideo, setWithoutvideo] = useState(false);
-
     const openvideo = () => {
         setWithoutvideo(true);
     };
@@ -14,7 +13,7 @@ function Howstudy() {
         setWithoutvideo(false);
     };
     return (
-        <section className="main-howstudy">
+        <section className="main-howstudy" id="main-howstudy">
             <div className="main-howstudy__title">Как происходит обучение на YtYt?</div>
             <div className="main-howstudy__subtitle">Обучение должно быть комфортным. Поэтому мы разработали собственную платформу для обучения программированию. На ней вы можете не только изучать теорию, но и запускать готовые примеры и даже писать свой собственный код.
             </div>
@@ -65,11 +64,13 @@ function Howstudy() {
             </div>
             <div className="howstudy-containerbutton">
                 <div className="howstudy-test">
-                    <div className="howstudy-buttoncontainer__button button">Начать обучение
-                        <span className="howstudy-buttoncontainer__textarrow arrow"><ArrowRightOutlined /></span>
+                    <div className="howstudy-test__buttonblock" onClick={() => { activeTests(true) }}>
+                        <div className="howstudy-test__button button">Начать обучение
+                            <span className="howstudy-test__textarrow arrow"><ArrowRightOutlined /></span>
+                        </div>
                     </div>
                 </div>
-                <div className="howstudy-buttoncontainer__text">Попробуйте, первые уроки бесплатны, но нужно пройти тестирование</div>
+                <div className="howstudy-containerbutton__text">Попробуйте, первые уроки бесплатны, но нужно пройти тестирование</div>
             </div>
         </section >
     );

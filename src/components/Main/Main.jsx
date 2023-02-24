@@ -6,13 +6,13 @@ import Helpandstudy from "./Helpandstudy/Helpandstudy";
 import PriceAndRules from "./Price/PriceAndRules";
 
 
-const Main = () => {
+function Main({ activeTest }) {
 
     return (
         <main className="main">
             <Programma />
             <BlockAdvantages />
-            <Howstudy />
+            <Howstudy activeTests={activeTest} />
             <div className="main-bgcolor">
                 <Helpandstudy />
                 <PriceAndRules />

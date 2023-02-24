@@ -3,6 +3,7 @@ import Iconprice from "../../Assets/Image/Main/iconprice.png"
 import Iconprice2 from "../../Assets/Image/Main/iconprice2.png"
 import Iconprice3 from "../../Assets/Image/Main/iconprice3.png"
 import rules from "../../Assets/Image/Main/rules.png"
+import phone from "../../Assets/Image/Main/phone.png"
 import PriceTable from "./PriceTable/PriceTable";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
@@ -30,7 +31,11 @@ function Price() {
                         </div>
                     </div>
                 </div>
-                <table className="mainprice-table">
+                <div className="price-phone">
+                    <img src={phone} alt="phone" />
+                    <span className="price-phone__arrow"><ArrowRightOutlined /></span>
+                </div>
+                <table className="mainprice-table" id="mainprice-table">
                     <PriceTable />
                 </table>
                 <div className="mainprice-table__iftime">* если занятиям уделяется около 20 часов в неделю</div>

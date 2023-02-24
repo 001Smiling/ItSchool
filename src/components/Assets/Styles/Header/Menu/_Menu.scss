@@ -146,6 +146,7 @@ $maxWidth: 1400;
     left: 0;
   }
   .menu.active{
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     transform: translateX(25%);

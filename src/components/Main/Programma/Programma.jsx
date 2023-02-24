@@ -4,7 +4,7 @@ import Program from "../../Assets/Image/Main/programma.png"
 
 const Programma = () => {
     return (
-        <section className="main-programma">
+        <section className="main-programma" id="main-programma">
             <div className="main-programma__title">
                 Какие технологии вы изучите:
             </div>

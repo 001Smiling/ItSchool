@@ -20,8 +20,8 @@ $maxWidth: 1400;
 .main-howstudy__title{
     @include adaptiv-font(46,24);
     font-weight: 600;
-    color: #22253B;
     padding: 55px 0px 26px 0px;
+    color: $maincolor;
 }
 .main-howstudy__subtitle{
     width: 642px;
@@ -29,7 +29,6 @@ $maxWidth: 1400;
     @include adaptiv-font(16,12);
     font-weight: 400;
     line-height: 125%;
-    color: #22253B;
 }
 .main-howstudy__media{
     position: relative;
@@ -205,6 +204,7 @@ $maxWidth: 1400;
     line-height: 125%;
     width: 90%;
     margin: 20px 0px 19px 0px;
+    color: $maincolor;
 }
 
 .howstudy-description__pointtext{
@@ -212,6 +212,7 @@ $maxWidth: 1400;
     font-weight: 400;
     @include adaptiv-font(16,12);
     line-height: 143%;
+    color: $maincolor;
 }
 
 .howstudy-containerbutton{
@@ -224,7 +225,7 @@ $maxWidth: 1400;
     margin: 38px 0px 0px 0px;
 }
 
-.howstudy-buttoncontainer__button{
+.howstudy-test__button{
     position: relative;
     width: 249px;
     margin: 12px 0px 11px 0px;
@@ -238,12 +239,12 @@ $maxWidth: 1400;
 }
 
 
-.howstudy-buttoncontainer__text{
+.howstudy-containerbutton__text{
     width: 214px;
-    color: #22253B;
     font-weight: 600;
     @include adaptiv-font(15,13);
     line-height: 120%;
+    color: $maincolor;
 }
 
 @media (min-width: 1200px) and (max-width: 1400px){
@@ -506,18 +507,13 @@ $maxWidth: 1400;
         width: 249px;
         text-align: center;
     }
-    // .howstudy-buttoncontainer__button{
-    //     position: relative;
-    //     width: 249px;
-    //     margin: 12px 0px 11px 0px;
-    //     font-weight: 400;
-    //     font-size: 16px;
-    //     transform: translateX(0%);
-    //     transition: 0.2s;
-    //     &:active{
-    //         transform: translate(100%,0);
-    //     }
-    // }
+    .howstudy-test__button{
+        transform: translateY(0%);
+        transition: 0.2s;
+        &:active{
+            transform: translate(0%,100%);
+        }
+    }
 }
 
 @media (max-width: 480px) {

@@ -12,6 +12,7 @@ $maxWidth: 1400;
     font-weight: 600;
     line-height: 100%;
     margin: 0px 0px 7px 0px;
+    color: $maincolor;
 }
 .main-advantages__points{
     justify-content: center;
@@ -49,6 +50,7 @@ $maxWidth: 1400;
     font-weight: 600;
     line-height: 115%;
     text-align: center;
+    color: $maincolor;
 }
 .main-advantages__text{
     width: 83%;
@@ -56,6 +58,7 @@ $maxWidth: 1400;
     @include adaptiv-font(13,9);
     line-height: 115%;
     text-align: center;
+    color: $maincolor;
 }
 
 @media (min-width: 1200px) and (max-width: 1671px){

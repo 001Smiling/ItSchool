@@ -4,9 +4,9 @@ import Infa from "./Infa/Infa";
 
 
 
-const Footer = () => {
+function Footer() {
     return (
-        <div className="footer">
+        <footer className="footer" id="footer">
             <div className="footer__datablok sizeblock">
                 <div className="footer__data">
                     <Network />
@@ -20,7 +20,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }
 

@@ -2,11 +2,11 @@ import Menu from './Menu/Menu'
 import About from './About/About';
 import { ArrowDownOutlined } from "@ant-design/icons";
 
-const Header = () => {
+function Header({ activeTest }) {
     return (
         <header className="header">
             <Menu />
-            <About />
+            <About activeTest={activeTest} />
             <span className="header-span"><ArrowDownOutlined /></span>
         </header>
     );

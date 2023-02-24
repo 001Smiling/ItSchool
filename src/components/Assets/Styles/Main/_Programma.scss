@@ -16,6 +16,7 @@ $maxWidth: 1400;
     font-weight: 600;
     line-height: 100%;
     margin: 0px 0px 35px 0px;
+    color: $maincolor;
 }
 .main-programma__options{
     justify-content: center;
@@ -79,6 +80,7 @@ $maxWidth: 1400;
     font-weight: 600;
     line-height: 125%;
     margin: 25px 0px 0px 0px;
+    color: $maincolor;
 }
 
 @media (min-width: 1433px){

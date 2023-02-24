@@ -1,4 +1,5 @@
 import { CloseOutlined, ArrowRightOutlined } from "@ant-design/icons";
+import { HashLink } from 'react-router-hash-link';
 function BurgerMenu({ active, setActive }) {
     return (
         <div className={active ? 'menu active' : 'menu'}>
@@ -9,19 +10,19 @@ function BurgerMenu({ active, setActive }) {
                     </div>
                     <div className="menu-content__position">
                         <ul className='menu-content__block'>
-                            <li onClick={e => e.stopPropagation()}>
-                                <a href="/" className='menu-content__point'>Чему вы научитесь</a>
+                            <li onClick={() => setActive(false)} >
+                                <HashLink to="../../Main/Programma/Programma#main-programma" className='menu-content__point'>Чему вы научитесь</HashLink>
                             </li>
-                            <li onClick={e => e.stopPropagation()}>
-                                <a href="/" className='menu-content__point'>Процесс обучения</a>
+                            <li onClick={() => setActive(false)} >
+                                <HashLink to="/../../Main/Price/PriceAndRules#main-howstudy" className='menu-content__point'>Процесс обучения</HashLink>
                             </li>
-                            <li onClick={e => e.stopPropagation()}>
-                                <a href="/" className='menu-content__point'>Стоимость</a>
+                            <li onClick={() => setActive(false)} >
+                                <HashLink to="../../Main/Price/PriceAndRules#mainprice-table" className='menu-content__point'>Стоимость</HashLink>
                             </li>
-                            <li onClick={e => e.stopPropagation()}>
-                                <a href="/" className='menu-content__point'>Контакты</a>
+                            <li onClick={() => setActive(false)} >
+                                <HashLink to="../../Footer/Footer#footer" className='menu-content__point'>Контакты</HashLink>
                             </li>
-                            <li onClick={e => e.stopPropagation()}>
+                            <li onClick={() => setActive(false)} >
                                 <a href="/" className='menu-content__point'>Регистрация</a>
                             </li>
                         </ul>
