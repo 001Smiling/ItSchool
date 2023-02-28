@@ -4,7 +4,7 @@ import logo from '../../Assets/Image/Header/logo.png'
 import BurgerMenu from "./BurgerMenu";
 import { HashLink } from 'react-router-hash-link';
 
-function Menu() {
+function Menu({ activereg, activelog }) {
     const [menuActive, setmenuActive] = useState(false)
     return (
         <div className="header-menu sizeblock">
@@ -21,8 +21,8 @@ function Menu() {
                         </div>
                     </nav>
                     <div className="header-menu__group-button">
-                        <div className="header-menu__regist">Регистрация</div>
-                        <div className="header-menu__login login-button">
+                        <div className="header-menu__regist" onClick={() => { activereg(true) }}>Регистрация</div>
+                        <div className="header-menu__login login-button" onClick={() => { activelog(true) }}>
                             <span className="header-menu__login-arrow login-arrow"><ArrowRightOutlined /></span>
                             Войти
                         </div>

@@ -8,7 +8,7 @@ import PriceTable from "./PriceTable/PriceTable";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
 
-function Price() {
+function Price({ activeTests }) {
     return (
         <section className="main-price">
             <div className="main-price__title">Стоимость обучения</div>
@@ -43,7 +43,7 @@ function Price() {
                     <div className="mainprice-rules__points">
                         <div className="mainprice-rules__iconblock"><img src={rules} alt="iconrules" className="mainprice-rules__icon" /></div>
                         <div className="mainprice-rules__text">Все блоки проходятся строго по порядку. Пропустить какой-то блок или начать обучение с середины нельзя, даже если вы считаете, что уже знаете какую-то часть материала. Только так мы можем гарантировать, что вы получите все знания, предусмотренные учебной программой.</div>
-                        <div className="mainprice-rules__btn button">
+                        <div className="mainprice-rules__btn button" onClick={() => { activeTests(true) }}>
                             Начать обучение
                             <span className="mainprice-rules__btnarrow arrow"><ArrowRightOutlined /></span>
                         </div>

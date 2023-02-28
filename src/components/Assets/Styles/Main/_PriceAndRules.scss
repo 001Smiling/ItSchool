@@ -157,6 +157,23 @@ justify-content: space-between;
     font-size: 20px;
     width: 26%;
     margin: 0px 51px 0px 0px;
+    &:hover{
+        animation: pulse 2s infinite;
+          @keyframes pulse {
+            0% {
+              -moz-box-shadow: 0 0 0 0 #38BFF2;
+              box-shadow: 0 0 0 0 #38BFF2;
+            }
+            70% {
+                -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+                box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+            }
+            100% {
+                -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+                box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+            }
+          }
+    }
 }
 @media (min-width: 960px) and (max-width: 1200px){
     .main-price__point1{

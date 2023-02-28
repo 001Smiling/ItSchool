@@ -40,7 +40,14 @@ $maxWidth: 1400;
 }
 .header-menu__option{
   width: 49.245%;
+  height: 18px;
   justify-content: space-between;
+}
+
+.header-menu__variant{
+  &:hover{
+    border-bottom: 2px solid #BCBCBC;;
+  }
 }
 
 .header-menu__group-button {
@@ -49,8 +56,17 @@ $maxWidth: 1400;
   justify-content: space-between;
   align-items: center;
 }
+.header-menu__regist{
+  cursor: pointer;
+  &:hover{
+    padding: 8px 9px;
+    border-radius: 34px;
+    background-color: #F15525;
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+  }
+}
 .login-button{
-  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,11 +74,17 @@ $maxWidth: 1400;
   @include adaptiv-font(12,10);
   background-color: #38c0f2;
   color: rgb(255, 255, 255);
+  &:hover{
+    @include adaptiv-font(13,11);
+  }
 }
-
 .header-menu__login{
   width: 77.9px;
   height: 30.73px;
+  cursor: pointer;
+  &:hover{
+    width: 82.9px;
+  }
 }
 
 .login-arrow{
