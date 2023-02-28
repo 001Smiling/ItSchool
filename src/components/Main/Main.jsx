@@ -15,7 +15,7 @@ function Main({ activeTest }) {
             <Howstudy activeTests={activeTest} />
             <div className="main-bgcolor">
                 <Helpandstudy />
-                <PriceAndRules />
+                <PriceAndRules activeTests={activeTest} />
             </div>
         </main>
     );
