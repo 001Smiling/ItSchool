@@ -21,10 +21,10 @@ function Questions({ data, results, onAnswerUpdate, numberOfQuestions, activeQue
         }
         else {
             if (e.target.value === data.answer) {
-                setanswer("Правильно! С логикой у вас все отлично")
+                setanswer(data.correctly)
             }
             else {
-                setanswer("К сожелению ответ не верный")
+                setanswer(data.mistake)
             }
         }
     }
