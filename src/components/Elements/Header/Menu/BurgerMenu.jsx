@@ -1,6 +1,6 @@
 import { CloseOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import { HashLink } from 'react-router-hash-link';
-function BurgerMenu({ active, setActive }) {
+function BurgerMenu({ active, setActive, activereg }) {
     return (
         <div className={active ? 'menu active' : 'menu'}>
             <div className='blur' onClick={() => setActive(false)}>
@@ -22,10 +22,10 @@ function BurgerMenu({ active, setActive }) {
                             <li onClick={() => setActive(false)} >
                                 <HashLink to="../../Footer/Footer#footer" className='menu-content__point'>Контакты</HashLink>
                             </li>
-                            <li onClick={() => setActive(false)} >
-                                <a href="/" className='menu-content__point'>Регистрация</a>
-                            </li>
                         </ul>
+                        <div onClick={() => setActive(false)} >
+                            <p className='menu-content__point' onClick={() => { activereg(true) }}>Регистрация</p>
+                        </div>
                         <div className="menu-content__burgerlogin login-button">
                             <span className="enu-content__burgerspanlogin login-arrow"><ArrowRightOutlined /></span>
                             Войти

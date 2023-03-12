@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Like from "../../Assets/Image/Test/Like.png"
-import smile from "../../Assets/Image/Test/smile.png"
+import Like from "../../../Assets/Image/Test/Like.png"
+import smile from "../../../Assets/Image/Test/smile.png"
 import { ArrowRightOutlined } from "@ant-design/icons";
 
-function ResultTest({ results, data }) {
+function ResultTest({ results, data, closeTest, activereg }) {
     const [correctAnswers, setCorrectAnswers] = useState(0);
     const [phrase, setphrase] = useState('')
     const [like, setlike] = useState('false')
@@ -26,6 +26,10 @@ function ResultTest({ results, data }) {
         setCorrectAnswers(correct);
         // eslint-disable-next-line
     }, []);
+    function closeTests() {
+        closeTest(false);
+        activereg(true)
+    }
     return (
         <div className="block-result">
             <div className="block-result__sizeblock blok__sizeblock">
@@ -39,7 +43,7 @@ function ResultTest({ results, data }) {
                         <p className="block-result__correct">Набрано {correctAnswers}/ {data.length}</p>
                     </div>
                     {phrase && <div className="block-result__description">{phrase}</div>}
-                    <div className="block-result__btn-result button">
+                    <div className="block-result__btn-result button" onClick={closeTests} >
                         Начать <span className="block-result__btn-span">учиться бесплатно</span>
                         <span className="block-result__arrow"><ArrowRightOutlined /></span>
                     </div>

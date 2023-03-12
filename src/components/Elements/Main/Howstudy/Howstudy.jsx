@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { PlayCircleFilled, CloseCircleFilled, ArrowRightOutlined } from "@ant-design/icons";
-import process from "../../Assets/Video/process.mp4";
-import videoimg from "../../Assets/Image/Main/video.PNG"
+import process from "../../../Assets/Video/process.mp4";
+import videoimg from "../../../Assets/Image/Main/video.PNG"
 
 
 function Howstudy({ activeTests }) {

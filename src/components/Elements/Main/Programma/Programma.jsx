@@ -1,5 +1,5 @@
 import React from "react";
-import Program from "../../Assets/Image/Main/programma.png"
+import Program from "../../../Assets/Image/Main/programma.png"
 
 
 const Programma = () => {

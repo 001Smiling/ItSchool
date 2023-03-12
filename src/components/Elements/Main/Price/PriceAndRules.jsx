@@ -1,9 +1,9 @@
 import React from "react";
-import Iconprice from "../../Assets/Image/Main/iconprice.png"
-import Iconprice2 from "../../Assets/Image/Main/iconprice2.png"
-import Iconprice3 from "../../Assets/Image/Main/iconprice3.png"
-import rules from "../../Assets/Image/Main/rules.png"
-import phone from "../../Assets/Image/Main/phone.png"
+import Iconprice from "../../../Assets/Image/Main/iconprice.png"
+import Iconprice2 from "../../../Assets/Image/Main/iconprice2.png"
+import Iconprice3 from "../../../Assets/Image/Main/iconprice3.png"
+import rules from "../../../Assets/Image/Main/rules.png"
+import phone from "../../../Assets/Image/Main/phone.png"
 import PriceTable from "./PriceTable/PriceTable";
 import { ArrowRightOutlined } from "@ant-design/icons";
 

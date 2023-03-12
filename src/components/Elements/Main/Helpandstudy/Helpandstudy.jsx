@@ -1,6 +1,6 @@
 import React from "react";
-import Help from "../../Assets/Image/Main/help.png"
-import Method from "../../Assets/Image/Main/method.png"
+import Help from "../../../Assets/Image/Main/help.png"
+import Method from "../../../Assets/Image/Main/method.png"
 
 
 const Helpandstudy = () => {

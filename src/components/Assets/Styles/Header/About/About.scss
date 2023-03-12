@@ -118,6 +118,12 @@ $maxWidth: 1400;
     .header-about__text-button {
         width: 249px;
     }
+
+.header-about__light-btn{
+    &:hover{
+        width: 254px;
+    }
+}
 }
 @media (max-width: 640px) {
     .header-about {

@@ -24,15 +24,20 @@
     flex-direction: column;
     text-align: center;
     width: 250px;
+    padding-top: 15px;
+    &:first-child{
+        padding-top: 0;
+    }
     .login-form__span{
         font-size: 25px;
     }
     .login-form__input{
         height: 40px;
-        padding-left: 10px;
+        padding: 0px 10px 0px 10px;
         border-radius: 30px;
         border: 2px solid #BCBCBC;
         margin-top: 10px;
+        text-align: center;
     }
 }
 
@@ -46,6 +51,7 @@
     font-weight: 600;
     margin-top: 20px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 @media (max-width: 480px) {

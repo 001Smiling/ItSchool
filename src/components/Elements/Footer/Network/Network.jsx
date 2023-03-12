@@ -1,9 +1,9 @@
 import React from "react";
-import logo from '../../Assets/Image/Header/logo.png'
-import insta from '../../Assets/Image/Footer/insta.png'
-import vk from '../../Assets/Image/Footer/vk.png'
-import facebook from '../../Assets/Image/Footer/facebook.png'
-import youtube from '../../Assets/Image/Footer/youtube.png'
+import logo from '../../../Assets/Image/Header/logo.png'
+import insta from '../../../Assets/Image/Footer/insta.png'
+import vk from '../../../Assets/Image/Footer/vk.png'
+import facebook from '../../../Assets/Image/Footer/facebook.png'
+import youtube from '../../../Assets/Image/Footer/youtube.png'
 
 
 

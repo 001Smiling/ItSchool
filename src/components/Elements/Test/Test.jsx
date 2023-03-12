@@ -6,7 +6,7 @@ import Questions from "./Elements/Questions";
 import ResultTest from "./Elements/ResultTest";
 
 
-function ITtest({ closeTest }) {
+function ITtest({ closeTest, activereg }) {
     const [step, setStep] = useState(1);
     const [activeQuestion, setActiveQuestion] = useState(0);
     const [answers, setAnswers] = useState([]);
@@ -34,6 +34,8 @@ function ITtest({ closeTest }) {
                 {step === 3 && <ResultTest
                     results={answers}
                     data={Test.data}
+                    closeTest={closeTest}
+                    activereg={activereg}
                 />}
             </div>
         </section>

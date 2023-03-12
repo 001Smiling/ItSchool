@@ -4,13 +4,13 @@ import Infa from "./Infa/Infa";
 
 
 
-function Footer() {
+function Footer({ activereg }) {
     return (
         <footer className="footer" id="footer">
             <div className="footer__datablok sizeblock">
                 <div className="footer__data">
                     <Network />
-                    <Infa />
+                    <Infa activereg={activereg} />
                 </div>
                 <div className="footer__law">
                     &copy;2022 ytyt — Все права защищены

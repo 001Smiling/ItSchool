@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ArrowRightOutlined } from "@ant-design/icons";
-import logo from '../../Assets/Image/Header/logo.png'
+import logo from '../../../Assets/Image/Header/logo.png'
 import BurgerMenu from "./BurgerMenu";
 import { HashLink } from 'react-router-hash-link';
 
@@ -29,7 +29,7 @@ function Menu({ activereg, activelog }) {
                     </div>
                 </div>
             </div>
-            <BurgerMenu active={menuActive} setActive={setmenuActive} />
+            <BurgerMenu active={menuActive} setActive={setmenuActive} activereg={activereg} />
         </div>
     );
 }
