@@ -76,6 +76,13 @@ $maxWidth: 1400;
     color: rgba(34, 37, 59, 1);
 }
 
+.footer-seconpart__menu-point{
+    cursor: pointer;
+    &:hover{
+        font-size: 15px;
+      }
+}
+
 .footer-seconpart__contact{
     display: flex;
     flex-direction: column;

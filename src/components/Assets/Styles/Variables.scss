@@ -49,3 +49,31 @@ a{
     }
   }
 
+.header-menu__button-out {
+  display: none;
+}
+
+.header-menu__name-user{
+  &:hover{
+    .header-menu__button-block{
+      position: absolute;
+      display: block;
+      margin-top: 5px;
+      background-color: rgba(168, 208, 211, 0.408);
+      height: 40px;
+      width: 80px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    .header-menu__button-out {
+      position: absolute;
+      display: block;
+      padding: 5px 10px;
+      top: 7px;
+      left: 10px;
+      background-color: #F15525;
+      color: white;
+      border-radius: 30px;
+    }
+  }
+}
