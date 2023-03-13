@@ -4,6 +4,7 @@ import logo from '../../../Assets/Image/Header/logo.png'
 import BurgerMenu from "./BurgerMenu";
 import { HashLink } from 'react-router-hash-link';
 
+
 function Menu({ activereg, activelog }) {
     const [menuActive, setmenuActive] = useState(false)
     return (
@@ -12,10 +13,10 @@ function Menu({ activereg, activelog }) {
                 <img src={logo} className="header-menu__logo" alt="logo" />
                 <div className=" header-menu__without-burger header-menu__withburger">
                     <nav className="header-menu__option">
-                        <HashLink to="../../Main/Programma/Programma#main-programma" className="header-menu__variant">Чему вы научитесь</HashLink>
-                        <HashLink to="/../../Main/Price/PriceAndRules#main-howstudy" className="header-menu__variant">Процесс обучения</HashLink>
-                        <HashLink to="../../Main/Price/PriceAndRules#mainprice-table" className="header-menu__variant">Стоимость</HashLink>
-                        <HashLink to="../../Footer/Footer#footer" className="header-menu__variant">Контакты</HashLink>
+                        <HashLink to="./#main-programma" className="header-menu__variant">Чему вы научитесь</HashLink>
+                        <HashLink to="./#main-howstudy" className="header-menu__variant">Процесс обучения</HashLink>
+                        <HashLink to="./#mainprice-table" className="header-menu__variant">Стоимость</HashLink>
+                        <HashLink to="./#footer" className="header-menu__variant">Контакты</HashLink>
                         <div className='header-menu__burget-btn burgermenu-state' onClick={() => setmenuActive(!menuActive)}>
                             <span />
                         </div>

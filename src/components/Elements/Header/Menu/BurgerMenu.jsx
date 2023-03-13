@@ -11,16 +11,16 @@ function BurgerMenu({ active, setActive, activereg }) {
                     <div className="menu-content__position">
                         <ul className='menu-content__block'>
                             <li onClick={() => setActive(false)} >
-                                <HashLink to="../../Main/Programma/Programma#main-programma" className='menu-content__point'>Чему вы научитесь</HashLink>
+                                <HashLink to="./#main-programma" className='menu-content__point'>Чему вы научитесь</HashLink>
                             </li>
                             <li onClick={() => setActive(false)} >
-                                <HashLink to="/../../Main/Price/PriceAndRules#main-howstudy" className='menu-content__point'>Процесс обучения</HashLink>
+                                <HashLink to="./#main-howstudy" className='menu-content__point'>Процесс обучения</HashLink>
                             </li>
                             <li onClick={() => setActive(false)} >
-                                <HashLink to="../../Main/Price/PriceAndRules#mainprice-table" className='menu-content__point'>Стоимость</HashLink>
+                                <HashLink to="./#mainprice-table" className='menu-content__point'>Стоимость</HashLink>
                             </li>
                             <li onClick={() => setActive(false)} >
-                                <HashLink to="../../Footer/Footer#footer" className='menu-content__point'>Контакты</HashLink>
+                                <HashLink to="./#footer" className='menu-content__point'>Контакты</HashLink>
                             </li>
                         </ul>
                         <div onClick={() => setActive(false)} >
