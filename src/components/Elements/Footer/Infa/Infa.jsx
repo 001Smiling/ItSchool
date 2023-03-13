@@ -7,10 +7,10 @@ function Infa({ activereg }) {
     return (
         <div className="footer-seconpart">
             <div className="footer-seconpart__menu">
-                <HashLink to="../../Main/Programma/Programma#main-programma" className="footer-seconpart__menu-point">Чему вы научитесь</HashLink>
-                <HashLink to="/../../Main/Price/PriceAndRules#main-howstudy" className="footer-seconpart__menu-point">Процесс обучения</HashLink>
-                <HashLink to="../../Main/Price/PriceAndRules#mainprice-table" className="footer-seconpart__menu-point">Стоимость</HashLink>
-                <HashLink to="../../Footer/Footer#footer" className="footer-seconpart__menu-point">Контакты</HashLink>
+                <HashLink to="./#main-programma" className="footer-seconpart__menu-point">Чему вы научитесь</HashLink>
+                <HashLink to="./#main-howstudy" className="footer-seconpart__menu-point">Процесс обучения</HashLink>
+                <HashLink to="./#mainprice-table" className="footer-seconpart__menu-point">Стоимость</HashLink>
+                <HashLink to="./#footer" className="footer-seconpart__menu-point">Контакты</HashLink>
                 <div className="footer-seconpart__menu-point" onClick={() => { activereg(true) }}>Регистрация</div>
             </div>
             <div className="footer-seconpart__contactip">
