@@ -69,7 +69,6 @@ justify-content: space-between;
 
 .main-price__text{
     @include adaptiv-font(16,12);
-    font-weight: 400;
     line-height: 131%;
 }
 
@@ -97,15 +96,14 @@ justify-content: space-between;
 
 .mainprice-table__row {
     @include adaptiv-font(20,13);
-    font-weight: 400;
     &:nth-child(odd){
         background: #F3F3F3;
     }
 }
 
-.mainprice-table__header-footer{
-    font-weight: 700;
+.mainprice-res{
     @include adaptiv-font(24,19);
+    font-weight: 700;
 }
 .mainprice-table__header{
     font-size: 16px;
@@ -116,8 +114,11 @@ justify-content: space-between;
     display: flex;
     align-items: center;
     padding-left: 19px;
-    width: 33%;
+    width: 26%;
     text-align: start;
+    &:first-child{
+        width: 46%;
+    }
 }
 
 .mainprice-table__iftime{
@@ -161,8 +162,8 @@ justify-content: space-between;
         animation: pulse 2s infinite;
           @keyframes pulse {
             0% {
-              -moz-box-shadow: 0 0 0 0 #38BFF2;
-              box-shadow: 0 0 0 0 #38BFF2;
+              -moz-box-shadow: 0 0 0 0 $thirdcolor;
+              box-shadow: 0 0 0 0 $thirdcolor;
             }
             70% {
                 -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
@@ -273,7 +274,7 @@ justify-content: space-between;
     }
     .main-price__points{
         width: 100%;
-        height: 355px;
+        height: 415px;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -325,6 +326,20 @@ justify-content: space-between;
         margin-top: 50px;
         padding: 21px 21px 17px 20px;
     }
+    .mainprice-table__data,
+    .mainprice-table__rowblok {
+        width: 29%;
+        &:first-child{
+            width: 39%;
+        }
+        &:last-child{
+            width: 35%;
+        }
+    }
+    .mainprice-table__header-footer,
+    .mainprice-table__row {
+    height: 70px;
+    }
     .mainprice-table__iftime{
         margin-left: 23px;
     }
@@ -336,6 +351,9 @@ justify-content: space-between;
 }
 
 @media (max-width: 480px) {
+    .main-price__points{
+        height: 355px;
+    }
     .pricepoint{
         width: 100%;
     }

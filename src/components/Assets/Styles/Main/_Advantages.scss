@@ -54,7 +54,6 @@ $maxWidth: 1400;
 }
 .main-advantages__text{
     width: 83%;
-    font-weight: 400;
     @include adaptiv-font(13,9);
     line-height: 115%;
     text-align: center;

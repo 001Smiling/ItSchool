@@ -27,14 +27,14 @@ export default function PriceTable() {
         </tbody>
         <tfoot>
             <tr className="mainprice-table__footer mainprice-table__header-footer">
-                <th className="mainprice-table__data" >Итого</th>
+                <th className="mainprice-table__data mainprice-res" >Итого</th>
                 {Object.entries(name1).map(([key, values]) => (
-                    <th key={key} className="mainprice-table__data">
+                    <th key={key} className="mainprice-table__data mainprice-res">
                         {sumBy(values, "price")}
                     </th>
                 ))}
                 {Object.entries(name2).map(([key, values]) => (
-                    <th key={key} className="mainprice-table__data">
+                    <th key={key} className="mainprice-table__data mainprice-res">
                         {sumBy(values, "time")}
                     </th>
                 ))}

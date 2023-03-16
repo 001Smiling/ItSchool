@@ -1,6 +1,12 @@
-import { CloseOutlined, ArrowRightOutlined } from "@ant-design/icons";
+import { CloseOutlined, LogoutOutlined } from "@ant-design/icons";
+import { useNavigate } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
-function BurgerMenu({ active, setActive, activereg, activelog }) {
+function UserBurger({ active, setActive }) {
+    const history = useNavigate();
+    const userlogout = () => {
+        localStorage.removeItem("user_login")
+        history("/");
+    }
     return (
         <div className={active ? 'menu active' : 'menu'}>
             <div className='blur' onClick={() => setActive(false)}>
@@ -22,13 +28,11 @@ function BurgerMenu({ active, setActive, activereg, activelog }) {
                             <li onClick={() => setActive(false)} >
                                 <HashLink to="./#footer" className='menu-content__point'>Контакты</HashLink>
                             </li>
-                            <li onClick={() => setActive(false)} >
-                                <p className='menu-content__point' onClick={() => { activereg(true) }}>Регистрация</p>
-                            </li>
                         </ul>
-                        <div className="menu-content__burgerlogin login-button" onClick={() => { activelog(true) }}>
-                            <span className="menu-content__burgerspanlogin login-arrow"><ArrowRightOutlined /></span>
-                            Войти
+                        <div className="menu-content__burger-logout">
+                            <div className="menu-content__btn-logout button" onClick={userlogout}>
+                                <span className="menu-content__burgerspanlogin login-arrow"><LogoutOutlined /></span>
+                                LogOut</div>
                         </div>
                     </div>
                 </div>
@@ -37,4 +41,4 @@ function BurgerMenu({ active, setActive, activereg, activelog }) {
     );
 }
 
-export default BurgerMenu;
+export default UserBurger;

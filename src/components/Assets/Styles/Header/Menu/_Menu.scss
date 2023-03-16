@@ -61,29 +61,19 @@ $maxWidth: 1400;
   &:hover{
     padding: 8px 9px;
     border-radius: 34px;
-    background-color: #F15525;
+    background-color: $secondcolor;
     color: rgb(255, 255, 255);
     margin-right: 5px;
-  }
-}
-.login-button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 34px;
-  @include adaptiv-font(12,10);
-  background-color: #38c0f2;
-  color: rgb(255, 255, 255);
-  &:hover{
-    @include adaptiv-font(13,11);
   }
 }
 .header-menu__login{
   width: 77.9px;
   height: 30.73px;
   cursor: pointer;
+  @include adaptiv-font(12,10);
   &:hover{
     width: 82.9px;
+    @include adaptiv-font(13,11);
   }
 }
 
@@ -107,7 +97,7 @@ $maxWidth: 1400;
       position: absolute;
       top: 0;
       width: 17px;
-      background: #F15525;
+      background: $secondcolor;
       border-radius: 21px;
       height: 2px;
     }
@@ -115,7 +105,7 @@ $maxWidth: 1400;
       position: absolute;
       top: 4px;
       width: 17px;
-      background: #F15525;
+      background: $secondcolor;
       border-radius: 21px;
       height: 2px;
     }
@@ -125,7 +115,7 @@ $maxWidth: 1400;
       width: 17px;
       height: 2px;
       top: 8px;
-      background: #F15525;
+      background: $secondcolor;
       border-radius: 21px;
     }
   }
@@ -149,6 +139,7 @@ $maxWidth: 1400;
   }
   .header-menu__option{
     width: 17px;
+    height: 11px;
   }
   .burgermenu-state{
     display: block;
@@ -188,6 +179,9 @@ $maxWidth: 1400;
         color: rgba(34, 37, 59, 1);
         @include adaptiv-font(60,20);
         padding: 11px 0 11px 0;
+        &:hover{
+          border-bottom: 2px solid #BCBCBC;;
+        }
         &:first-child{
           padding: 0 0 11px 0;
         }
@@ -223,15 +217,13 @@ $maxWidth: 1400;
     align-items: center;
     justify-content: space-between;
   }
-  ul li a{
+  .menu-content__position,
+  .menu-content__point{
+    display: flex;
+    align-items: center;
     color: white;
     text-decoration: none;
   }
-  ul li {
-    display: flex;
-    align-items: center;
-  }
-
   .menu-content__block{
     text-align: center;
   }
@@ -240,6 +232,23 @@ $maxWidth: 1400;
     height: 49px;
     margin: 0 0 34px 0;
     @include adaptiv-font(50,15);
+    &:hover{
+      animation: pulselog 2s infinite;
+        @keyframes pulselog {
+          0% {
+            -moz-box-shadow: 0 0 0 0 $thirdcolor;
+            box-shadow: 0 0 0 0 $thirdcolor;
+          }
+          70% {
+              -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+              box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+          }
+          100% {
+              -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+              box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+          }
+        }
+  }
   }
 }
 @media (max-width: 480px) {
