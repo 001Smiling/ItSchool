@@ -86,7 +86,7 @@ $maxWidth: 1400;
 @media (min-width: 640px) and (max-width: 960px){
     .main-advantages__point {
         width: 26vw;
-        height: 22vh;
+        height: 200px;
         &:nth-last-child(-n+4){
             margin: 2.3vh 2.3vw 0 0;
             &:nth-last-child(-n+2){
