@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import logo from '../../../../components/Assets/Image/Header/logo.png'
+import UserBurger from './UserBurger';
 import { useNavigate } from 'react-router-dom'
-import logo from '../../../components/Assets/Image/Header/logo.png'
-import BurgerMenu from '../../Elements/Header/Menu/BurgerMenu';
 import { HashLink } from 'react-router-hash-link';
 function UserMenu() {
     const [logindata, setLoginData] = useState([]);
@@ -47,7 +47,7 @@ function UserMenu() {
                                 </div>
                             </div>
                         </div>
-                        <BurgerMenu active={menuActive} setActive={setmenuActive} />
+                        <UserBurger active={menuActive} setActive={setmenuActive} />
                     </div>
             }
         </>

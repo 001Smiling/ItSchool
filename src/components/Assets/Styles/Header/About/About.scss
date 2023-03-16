@@ -19,10 +19,10 @@ $maxWidth: 1400;
     line-height: 100%;
     @include adaptiv-font(46,24);
     .header-about__text-y{
-        color: #38BFF2;
+        color: $thirdcolor;
     }
     .header-about__text-y2{
-        color: #F15525;
+        color: $secondcolor;
     }
 }
 .header-about__text-test{
@@ -30,7 +30,6 @@ $maxWidth: 1400;
     align-items: center;
     width: 56%;
     height: 74px;
-    font-weight: 400;
     line-height: 143%;
     @include adaptiv-font(16,12);
     border-top: 1px solid rgba(222, 222, 222, 1);
@@ -38,13 +37,12 @@ $maxWidth: 1400;
 .header-about__text-button {
     width: 321px;
     @include adaptiv-font(20,18);
-    font-weight: 400;
     margin-left: 3px;
     margin-top: 2px;
 }
 .header-about__light-btn{
     &:hover{
-    width: 326px;
+    width: 328px;
     height: 75px;
     position: relative;
     z-index: 6;
@@ -63,7 +61,7 @@ $maxWidth: 1400;
         height: 580px;
         z-index: -3;
         background: linear-gradient(-32deg,transparent,
-        transparent, #38BFF2,#38BFF2,#38BFF2);
+        transparent, $thirdcolor,$thirdcolor,$thirdcolor);
         transform-origin: bottom left;
         animation: animate 4s linear infinite;
       }
@@ -122,6 +120,9 @@ $maxWidth: 1400;
 .header-about__light-btn{
     &:hover{
         width: 254px;
+        .header-about__text-button{
+            font-size: 21px;
+        }
     }
 }
 }
@@ -156,9 +157,15 @@ $maxWidth: 1400;
     .header-about__text-button{
         width: 299px;
     }
+    .header-about__light-btn{
+      &:hover{
+        width: 306px;
+      }
+    }
 }
 @media (max-width: 480px) {
     .header-about__text-slogan{
+        width: 84%;
         height: 120px;
     }
 }

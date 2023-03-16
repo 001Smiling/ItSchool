@@ -30,7 +30,7 @@ function Menu({ activereg, activelog }) {
                     </div>
                 </div>
             </div>
-            <BurgerMenu active={menuActive} setActive={setmenuActive} activereg={activereg} />
+            <BurgerMenu active={menuActive} setActive={setmenuActive} activereg={activereg} activelog={activelog} />
         </div>
     );
 }

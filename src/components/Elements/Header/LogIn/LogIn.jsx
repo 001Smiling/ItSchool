@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CloseOutlined } from "@ant-design/icons";
+import { CloseOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import { useNavigate } from 'react-router-dom'
 
 
@@ -78,7 +78,10 @@ function LogIn({ closeTest }) {
                         <input className="login-form__input" onChange={getdata} placeholder="Введите пароль" type="password" id="password" name="password" />
                     </p>
                     {error2 && <h3 className="block-questions__error">{error2}</h3>}
-                    <div className="login-form__button" onClick={login} >Войти</div>
+                    <div className="login-form__button" onClick={login} >
+                        <span className="header-menu__login-arrow login-arrow"><ArrowRightOutlined /></span>
+                        Войти
+                    </div>
                 </form>
             </div>
         </section>
